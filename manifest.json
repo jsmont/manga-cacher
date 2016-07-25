@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Manga-cacher",
+  "version": "0.1",
+  "content_scripts": [
+        {
+            "matches": [
+            "http://www.mangareader.net/*",
+            "https://www.mangareader.net/*"
+            ],
+            "js": ["jquery-3.1.0.js", "content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png"
+    }
+}
